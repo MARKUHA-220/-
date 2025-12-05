@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffcf77;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            margin: 20px;
+            
+        }
+        aside {
+			margin: 20px;
+		}
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td{
+            border: 1px solid #ffcf77;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Full-stack</h1>
+<nav>
+    <a href="">HTML kontrolinio darbo uzduotis</a>
+    <a href="">Siusti atsiliepima el.pastu</a>
+    <a href="workers.html">Registracija konsuktacijai</a>
+</nav>
+<br>
+<br>
+<h3>Registracija konsuktacijai</h3>
+    <form action="#" method="POST">
+        <table>
+            <tr>
+                <td><label for="name">Vardas:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Pavarde:</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="email">El. paštas:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Miestas</label></td>
+                <td><select id="Country">
+                    <option value="USA">Vilnius</option>
+                    <option value="England">Kaunas</option>
+                    <option value="Russia">Klaipėda</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="message">Pastabos:</label></td>
+                <td><textarea id="message" name="message"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Siųsti</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <br>
+    <nav>
+        <a href="index.html">HTML kontrolinio darbo uzduotis</a>
+    </nav>
+</body>
+</html>
