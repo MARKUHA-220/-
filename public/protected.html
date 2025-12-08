@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Панель</title>
+
+<script>
+    const role = localStorage.getItem("role");
+    const login = localStorage.getItem("login");
+
+    if (!role) {
+        window.location.href = "login.html";
+    }
+</script>
+</head>
+<body>
+
+<div class="menu">
+    <span id="userInfo"></span>
+    <a style="margin-left:auto;" onclick="logout()">Выход</a>
+</div>
+
+<div id="content"></div>
+
+<script>
+async function loadContent() {
+    const role = localStorage.getItem("role");
+    const login = localStorage.getItem("login");
+
+    document.getElementById("userInfo").textContent =
+        `Вход: ${login} (${role})`;
+
+    const res = await fetch("users.json");
+    const users = await res.json();
+
+    const container = document.getElementById("content");
+
+    if (role === "user") {
+        // пользователь — только свой сайт
+        const me = users.find(u => u.login === login);
+        container.innerHTML = `
+            <h2>Ваш сайт</h2>
+            <iframe src="${me.site}"
+                    width="100%"
+                    height="500"
+                    style="border:1px solid #ccc">
+            </iframe>
+        `;
+    }
+
+    if (role === "admin") {
+        // админ — список всех пользователей
+        container.innerHTML = "<h2>Пользователи и сайты</h2>";
+        
+        users
+          .filter(u => u.role === "user")
+          .forEach(u => {
+            const div = document.createElement("div");
+            div.innerHTML = `
+                <p><b>${u.login}</b></p>
+                <iframe src="${u.site}"
+                        width="100%"
+                        height="300"
+                        style="border:1px solid #999; margin-bottom:20px">
+                </iframe>
+            `;
+            container.appendChild(div);
+        });
+    }
+}
+
+function logout() {
+    localStorage.clear();
+    window.location.href = "login.html";
+}
+
+loadContent();
+</script>
+
+</body>
+</html>

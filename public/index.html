@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="tabs.js"></script>
+<title>Главная</title>
+</head>
+<body>
+
+<div class="menu">
+    <a onclick="showTab('home')">Главная</a>
+    <a onclick="showTab('about')">О нас</a>
+    <a href="login.html">Закрытая зона</a>
+</div>
+
+<div id="home" class="tab-content">
+    <header>
+        <h1>SSP</h1>
+    </header>
+    <section>
+    <h2>"Secret Science Projects"</h2>
+    <p>Только холодный расчёт освободит от оков инстинктов и приведёт к прогрессу!</p>
+    <h3>Галерея</h3>
+    <img src="IMG/CAM_00.png" alt="Img1" width="300" height="200">
+    <img src="IMG/CAM_01.png" alt="Img1" width="300" height="200">
+    <img src="IMG/CAM_18.png" alt="Img1" width="300" height="200">
+    <img src="IMG/CAM_30.png" alt="Img1" width="300" height="200">
+    <h3>Что мы можем дать?</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Технологи</th>
+                <th>Работу</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Высококачественную роботатехнику</td>
+                <td>Инженера</td>
+            </tr>
+            <tr>
+                <td>Продвинутый ИИ</td>
+                <td>Учёного</td>
+            </tr>
+            <tr>
+                <td>И много чего ещё!</td>
+                <td>Работу в ЧВК!</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Регистрация на работу</h3>
+    <form action="#" method="POST">
+        <table>
+            <tr>
+                <td><label for="name">Имя:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Фамилия:</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Почта:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="name">День рождения:</label></td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            <tr>
+                <td><label for="message">Сообщение нам:</label></td>
+                <td><textarea id="message" name="message"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Отправить!</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <h3>Видео записи</h3>
+    <iframe width="560" height="315" src="" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+    </section> 
+    <footer>
+        <p>&copy; 1984 SSP</p>
+    </footer>
+</div>
+
+
+
+<div id="about" class="tab-content" style="display:none;">
+    <header>
+        <h1>SSP</h1>
+    </header>
+
+    <div class="text">
+    <br>
+    <br>
+    <h2>Что? Как? и Где?</h2>
+    <p>Прогрес велик и проникает в жизни каждо человека, наши технологии настолько прогресивные что нам приходится их прятать от других глаз чтобы они неуничтожили мир!</p>
+    <p>Мы даёём каждому то в чём он нуждается и берём взамен его трудолюбие и знания для общего дела.</p>
+    <p>Наши фелиалы распространены практически по всему миру, даже работник на южном полюсе может прийти в наш фелиал "Центр контроля погоды" для подавки заявления на трудоустройства!</p>
+    <p>Наш штат рабочих состовляет около 3 м. рабочих и среди них можешь быть и ТЫ!</p>
+    <p>Каждый работник нашего компании получает всё что заслужил, а безработные получают только зависть!</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Дочернии компании</h1>
+
+    <br>
+    <br>
+
+    <h2>Nakamura enginering</h2>
+    <p>Основная индустриалистичесики направлення компания.</p>
+    <p>Основноые цели:</p>
+    <p>Постройка огромных заводов по переработке сырья в товары разново назначения.</p>
+    <p>Распределение инженерного отдела по всей корпорации.</p>
+    <p>Проэктирование сооружений Прогресса.</p>
+
+    <br>
+    <br>
+
+    <h2>Gorlex</h2>
+    <p>Основная индустриалистичесики-военно направлення компания.</p>
+    <p>Основноые цели:</p>
+    <p>Снабдения основный сил ОРУЖИЕМ.</p>
+    <p>Распределение оружия по Прогрессу.</p>
+    <p>Создания новый оружейныйх технолоний.</p>
+    <p>Производство оружия.</p>
+
+    <br>
+    <br>
+
+    <h2>Sarma</h2>
+    <p>Основная иследовательская направлення компания.</p>
+    <p>Основноые цели:</p>
+    <p>Изучения новыйх просторов мира.</p>
+    <p>Создание колоний.</p>
+    <p>Распределения экспеициального отдела по всей корпорации.</p>
+    <p>Иследование космоса.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 1984 SSP</p>
+    </footer>
+</div>
+
+</body>
+</html>
