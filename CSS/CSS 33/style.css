@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.social-container {
+  margin-left: 30px;
+  margin-top: 50px;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.fixed-container i {
+  font-size: 100px;
+}
+
+.fixed-icons1 {
+  color: blue;
+}
+
+.fixed-icons2 {
+  color: rgb(201, 201, 255);
+}
+
+.fixed-icons3 {
+  color: rgb(255, 0, 0);
+}
+
+.fixed-icons4 {
+  color: rgb(255, 0, 0);
+}
+
+.fixed-icons5 {
+  color: rgb(255, 165, 165);
+}
+
+.container {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
