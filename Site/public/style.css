@@ -1,0 +1,75 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to top, rgb(248, 214, 182), rgb(224, 224, 224));
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: linear-gradient(to top, #692525,  #854141);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #af4c4c;
+    font-weight: 700;
+}
+
+section {
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+        
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgb(255, 205, 158);
+    color: white;
+}
+
+.text {
+    padding: 20px;
+}
+
+.menu { 
+    position: sticky;
+    display: flex; 
+    background: #333; 
+    padding: 10px; 
+    color: white;
+    top: 0;
+}
+
+.menu a {
+    margin-right: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu a:visited {
+    color: white;
+}
+
+.menu a:hover { text-decoration: underline;}
